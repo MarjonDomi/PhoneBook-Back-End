@@ -11,7 +11,6 @@ import java.util.List;
 @Repository
 public interface ContactRepository extends JpaRepository<Contact,Long> {
 //    List<Contact> findContactByName(String name);
-
     @Query(nativeQuery = true, value = "SELECT * FROM contactbook.contacts WHERE name LIKE %:keyword%")
     List<Contact>searchBar(@Param("keyword") String keyword);
 }
