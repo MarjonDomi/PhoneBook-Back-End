@@ -64,6 +64,12 @@ import java.util.Optional;
             return contactRepository.searchBar(name);
         }
 
+        //        @GetMapping("/contactspagination/{currentPage}")
+//        public Page<Contact> findall(@PathVariable int currentPage){
+//        int pageSize= 5;
+//            Pageable pageable = PageRequest.of(currentPage -1, pageSize);
+//            return contactRepository.findAll(pageable);
+//        }
 }
 
    
